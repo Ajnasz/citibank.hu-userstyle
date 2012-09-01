@@ -1,7 +1,8 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document url-prefix("https://www.citibank.hu/HUGCB/JSO"),
-               url-prefix("https://www.citibank.hu/HUGCB/jba")
+               url-prefix("https://www.citibank.hu/HUGCB/jba"),
+               url-prefix("https://www.citibank.hu/HUGCB/jeso")
 {
 /*!
  * Bootstrap v2.1.0
