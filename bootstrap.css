@@ -2,7 +2,8 @@
 
 @-moz-document url-prefix("https://www.citibank.hu/HUGCB/JSO"),
                url-prefix("https://www.citibank.hu/HUGCB/jba"),
-               url-prefix("https://www.citibank.hu/HUGCB/jeso")
+               url-prefix("https://www.citibank.hu/HUGCB/jeso"),
+               url-prefix("https://www.citibank.hu/HUGCB/JPS/apps")
 {
 /*!
  * Bootstrap v2.1.0
@@ -444,6 +445,9 @@ input[type="color"] {
      -moz-border-radius: 3px !important;
           border-radius: 3px !important;
 }
+select {
+padding: 0 !important;
+}
 
 input,
 textarea {
@@ -680,16 +684,10 @@ div#portalSubHeader table {
     display: block !important;
     width: 100% !important;
     margin-left: -2px !important;
-    background-color: #FAFAFA;
-    background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2) !important;
-    background-repeat: repeat-x !important;
-    border: 1px solid #D4D4D4 !important;
-    border-radius: 4px 4px 4px 4px !important;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067) !important;
-    min-height: 40px !important;
+    background: transparent !important;
+    min-height: 30px !important;
     margin-bottom: 10px !important;
     padding-left: 15px !important;
-    padding-top: 5px !important;
 }
 div#portalSubHeader table[width="100%"] {
     display: none !important;
@@ -701,24 +699,42 @@ div#portalSubHeader a.NavLB,
 div#portalSubHeader a.NavLBOn,
 div#portalSubHeader a.NavLC,
 div#portalSubHeader a.NavLCOn {
-    color: #555555 !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    background-color: #fff;
+    color: #0088CC !important;
     display: block !important;
     float: left !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     font-weight: normal !important;
-    line-height: 18px !important;
-    padding: 5px 10px !important;
-    text-align: left !important;
-    text-shadow: 0 1px 0 #FFFFFF !important;
+    line-height: 14px !important;
     vertical-align: middle !important;
+
+    padding: 12px 8px !important;
+    margin-right: 2px !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    -webkit-border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+            border-radius: 5px !important;
+    -webkit-transition: background-color 0.6s ease, color 0.6s ease;
+        -moz-transition: background-color 0.6s ease, color 0.6s ease;
+        -o-transition: background-color 0.6s ease, color 0.6s ease;
+            transition: background-color 0.6s ease, color 0.6s ease;
+}
+div#portalSubHeader a.NavLB:hover,
+div#portalSubHeader a.NavLBOn:hover,
+div#portalSubHeader a.NavLC:hover,
+div#portalSubHeader a.NavLCOn:hover {
+    background-color: #eee !important;
+    color: #005580 !important;
+    text-decoration: none !important;
 }
 div#portalSubHeader a.NavLB:focus,
 div#portalSubHeader a.NavLBOn,
 div#portalSubHeader a.NavLC:focus,
 div#portalSubHeader a.NavLCOn {
-    background-color: #E5E5E5 !important;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125) inset !important;
-    color: #555555 !important;
+    color: #ffffff !important;
+    background-color: #0088cc !important;
     text-decoration: none !important;
 }
 td.NavLBR,
@@ -727,12 +743,13 @@ td.NavLCR,
 td.NavLCL {
     display: none !important;
 }
-td.NavLC {
+td.NavLC,
+td.NavLCOn {
     background-color: transparent !important;
     width: auto !important;
-}
-div#portalSubHeader a.NavLC {
-    color: #999 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: auto !important;
 }
 .appHd {
     font-size: 18px !important;
@@ -835,6 +852,16 @@ font.appTxtLgBold {
     display: none !important;
 }
 
+.appDtTbl {
+    width: 100% !important;
+}
+.appDtL,
+.appDtV {
+    border: 1px solid #ddd;
+    padding: 8px !important;
+    text-align: left !important;
+}
+
 .appaltbg {
     background-color: #fff !important;
 }
@@ -914,7 +941,9 @@ a.NavLink:hover {
     background-color: #F5F5F5 !important;
     text-decoration: underline !important;
 }
-.LogoBGPost { width: 325px !important;
+.LogoBGPost {
+    background: transparent !important;
+    width: 325px !important;
 }
 .portalAdBar,
 .portalAdBarhome {
@@ -1160,5 +1189,26 @@ a.NavLink:hover {
   background-color: #003399 \9 !important;
 }
 /* buttons end */
+select,
+select.dropdown {
+    background: #fff !important;
+    -moz-appearence: none !important;
+}
+td,
+.apptxtlg {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+}
+a.linksm,
+a.appLsLink {
+    color: #0088cc !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+}
+a.linksm:hover,
+a.appLsLink:hover {
+    color: #005580 !important;
+    text-decoration: underline !important;
+}
 
 }
