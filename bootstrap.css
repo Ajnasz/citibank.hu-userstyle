@@ -3,7 +3,10 @@
 @-moz-document url-prefix("https://www.citibank.hu/HUGCB/JSO"),
                url-prefix("https://www.citibank.hu/HUGCB/jba"),
                url-prefix("https://www.citibank.hu/HUGCB/jeso"),
-               url-prefix("https://www.citibank.hu/HUGCB/JPS/apps")
+               url-prefix("https://www.citibank.hu/HUGCB/JEA"),
+               url-prefix("https://www.citibank.hu/HUGCB/JPS/apps"),
+               url-prefix("https://www.citibank.hu/HUGCB/JPS/portal/Home.do"),
+               url-prefix("https://www.citibank.hu/HUGCB/JPS/portal/Customize.do")
 {
 /*!
  * Bootstrap v2.1.0
